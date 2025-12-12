@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Components/Navbar";
-import {HashRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Watchlist from "./Components/Watchlist";
 import Movies from "./Components/Movies";
 import Banner from "./Components/Banner";
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
     <MovieProvider>
-      <HashRouter>
+      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route
@@ -29,7 +29,7 @@ function App() {
           <Route path="/watchlist" element={<Watchlist />} />
         </Routes>
      
-      </HashRouter>
+      </BrowserRouter>
       </MovieProvider>
     </>
   );
