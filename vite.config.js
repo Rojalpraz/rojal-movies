@@ -7,5 +7,5 @@ export default defineConfig({
   plugins: [react()
     , tailwindcss()
   ],
-  base:"/rojal-movies",
+  base:process.env.VITE_BASE_PATH || "/rojal-movies",
 })
