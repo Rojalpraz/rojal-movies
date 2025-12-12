@@ -1,0 +1,32 @@
+import React from "react";
+import Net from "/netflix.jpg";
+import {Link} from "react-router-dom";
+
+function Navbar() {
+  return (
+    <nav className="p-2  flex items-center justify-between bg-gray-950 border gap-3">
+      <div className="flex items-center gap-4">
+        <Link to="/">
+          <img src={Net} alt="Movie Logo" className="w-[50px]" />
+        </Link>
+        <Link
+          to="/"
+          className="text-white italic text-2xl font-bold font-[Roboto]"
+        >
+          WatchMovies
+        </Link>
+      </div>
+      <div className="flex items-center gap-5 mr-3">
+        <Link
+          to="/watchlist"
+          className="hover:text-red-500 text-white text-lg font-bold  md:text-2xl font-[Roboto]  "
+        >
+          Watchlist
+        </Link>
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;
+//after react router dom , replace anchor tag<a></a> with <Link></Link> and use 'to' instead of 'href'
