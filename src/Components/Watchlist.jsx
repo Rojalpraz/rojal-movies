@@ -59,7 +59,7 @@ function Watchlist() {
                         </div>
                       </td>
                       <td className="p-3 block md:table-cell border border-gray-400/40">
-                        {rojal.vote_average}
+                        {rojal.vote_average.toFixed(1)}
                       </td>
                       <td className="p-3 block md:table-cell border border-gray-400/40">
                         {rojal.popularity.toFixed(0)}
