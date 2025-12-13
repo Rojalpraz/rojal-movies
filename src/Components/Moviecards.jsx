@@ -15,7 +15,7 @@ function Moviecards({img, name, praz}) {
   
   return (
     <div
-      className="bg-cover relative bg-center h-[40vh] w-[155px] rounded-xl hover:scale-110 duration-300 hover:cursor-pointer "
+      className="bg-cover relative bg-center h-[25vh] w-[150px] md:h-[40vh] md:w-[155px] rounded-xl hover:scale-110 duration-300 hover:cursor-pointer "
       style={{
         backgroundImage: `url(https://image.tmdb.org/t/p/w500${img})`,
       }}
