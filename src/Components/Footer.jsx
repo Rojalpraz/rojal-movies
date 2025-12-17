@@ -1,5 +1,5 @@
 import React from "react";
-import Net from "/netflix.jpg";
+
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -8,7 +8,7 @@ function Footer() {
       <footer className="w-full bg-black p-8 flex flex-col  ">
         <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-black text-center md:justify-between">
          <Link to='/'>
-          <img className="bg-cover w-[85px]" src={Net} />
+          <img className="bg-cover w-[85px]" src="/logo.jpg" />
           </Link>
           <ul className="flex flex-wrap items-center  text-white gap-y-2 gap-x-8">
             <li>
