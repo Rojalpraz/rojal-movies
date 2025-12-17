@@ -4,7 +4,7 @@ function Banner() {
   return (
     <>
       <div
-        className="h-[290px] md:h-[500px] bg-cover bg-center flex items-end w-full"
+        className="h-[290px] md:h-[500px] 2xl:h-[970px] bg-cover bg-center flex items-end w-full"
         style={{
           backgroundImage: `url(https://wallpapers.com/images/hd/the-departed-maroon-movie-poster-6cqet1zx8zrmsmzh.jpg)`,
         }}
