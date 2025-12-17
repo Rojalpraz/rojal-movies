@@ -28,18 +28,20 @@ function Movies() {
   }, [pageNumber]);
 
   return (
-    <div className="">
-      <div className="p-6">
-        <div className="text-xl font-bold text-center font-[Roboto] pb-4">
-          Popular Movies 
+    <div className="flex flex-col min-h-screen">
+      <div className="grow w-full mx-auto">
+        <div className="p-6">
+          <div className="text-xl text-white font-bold text-center font-[Roboto] pb-4">
+            Popular Movies 
+          </div>
+          <div className="flex flex-row justify-around flex-wrap 2xl:grid 2xl:grid-cols-7 m-2 gap-y-6">
+            {movies.map((obj) => (
+              <Moviecards key={obj.id} praz={obj} img={obj.poster_path} name={obj.title} />
+            ))}
+          </div>
         </div>
-        <div className="flex flex-row justify-around flex-wrap m-2 gap-y-6">
-          {movies.map((obj) => (
-            <Moviecards key={obj.id} praz={obj} img={obj.poster_path} name={obj.title} />
-          ))}
-        </div>
+        <Pagination next={nextPage} prev={previousPage} pageNO={pageNumber} />
       </div>
-      <Pagination next={nextPage} prev={previousPage} pageNO={pageNumber} />
       <Footer/>
     </div>
   );

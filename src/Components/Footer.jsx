@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <>
-      <footer className="w-full bg-black p-8 flex flex-col  ">
-        <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-black text-center md:justify-between">
+    <footer className="">
+      <div className="w-full p-8 flex flex-col bg-black  ">
+        <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-black  text-center md:justify-between">
          <Link to='/'>
           <img className="bg-cover w-[85px]" src="/logo.jpg" />
           </Link>
@@ -53,8 +53,8 @@ function Footer() {
            
            
         </p>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 }
 

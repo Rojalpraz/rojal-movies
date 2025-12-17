@@ -6,6 +6,7 @@ import Movies from "./Components/Movies";
 import Banner from "./Components/Banner";
 
 import { MovieProvider } from "./Contexts/MovieContext";
+import Footer from "./Components/Footer";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <>
+
     <MovieProvider>
       <BrowserRouter>
         <Navbar />
@@ -28,7 +30,7 @@ function App() {
           />
           <Route path="/watchlist" element={<Watchlist />} />
         </Routes>
-     
+  
       </BrowserRouter>
       </MovieProvider>
     </>

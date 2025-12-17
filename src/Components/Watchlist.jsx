@@ -13,7 +13,7 @@ function Watchlist() {
   return (
     <>
   
-      <div className=" text-center m-8">
+      <div className="text-center m-8">
         <input
           onChange={handleSearch}
           className="bg-gray-400/30 py-2 rounded w-80 h-10 px-4"
@@ -25,7 +25,7 @@ function Watchlist() {
         <div className="overflow-x-auto md:overflow-visible">
           <table className="w-full text-center border-gray-400/40 border-2">
             <thead className="border-gray-400/40 border-2 hidden md:table-header-group">
-              <tr className="text-xl text-gray-800/60">
+              <tr className="text-xl text-gray-400">
                 <th className="w-48"></th>
                 <th>Name</th>
                 <th className="">Ratings</th>
@@ -48,7 +48,7 @@ function Watchlist() {
                     >
                       <td className="p-3  md:table-cell flex justify-center md:justify-start">
                         <img
-                          className="w-[110px] h-[110px] rounded-xl"
+                          className="w-[110px] h-[110px] md:w-[120px] md:h-[130px] rounded-xl"
                           src={`https://image.tmdb.org/t/p/w500${rojal.poster_path}`}
                           alt="poster"
                         />

@@ -14,8 +14,9 @@ function Moviecards({img, name, praz}) {
   }
   
   return (
+    <section className="mx-auto">
     <div
-      className="bg-cover relative bg-center h-[25vh] w-[150px] md:h-[40vh] md:w-[155px] rounded-xl hover:scale-110 duration-300 hover:cursor-pointer "
+      className="bg-cover relative bg-center h-[22vh] w-[150px] md:h-[40vh] md:w-[155px] 2xl:w-[200px] 2xl:h-[15vh]  extra rounded-xl hover:scale-110 duration-300 hover:cursor-pointer "
       style={{
         backgroundImage: `url(https://image.tmdb.org/t/p/w500${img})`,
       }}
@@ -42,6 +43,7 @@ function Moviecards({img, name, praz}) {
         {name}
       </div>
     </div>
+    </section>
   );
 }
 
