@@ -4,7 +4,8 @@ import {Link} from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="p-2  flex items-center justify-between bg-black border-b border-b-gray-600 gap-3">
+    <nav className="">
+    <div className="p-2  flex items-center justify-between bg-black border-b border-b-gray-600 gap-3">
       <div className="flex items-center gap-4">
         <Link to="/">
           <img src="/logo.jpg" alt="Movie Logo" className="w-[50px]" />
@@ -24,6 +25,7 @@ function Navbar() {
           Watchlist
         </Link>
       </div>
+    </div>
     </nav>
   );
 }

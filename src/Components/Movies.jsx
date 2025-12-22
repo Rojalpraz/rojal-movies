@@ -34,7 +34,8 @@ function Movies() {
           <div className="text-xl text-white font-bold text-center font-[Roboto] pb-4">
             Popular Movies 
           </div>
-          <div className="flex flex-row justify-around flex-wrap lg:grid lg:grid-cols-5 2xl:grid 2xl:grid-cols-7 m-2 gap-y-6">
+          <div className="flex flex-row justify-around flex-wrap lg:grid lg:grid-cols-5    
+ 2xl:grid 2xl:grid-cols-6 m-2 gap-y-6">
             {movies.map((obj) => (
               <Moviecards key={obj.id} praz={obj} img={obj.poster_path} name={obj.title} />
             ))}
