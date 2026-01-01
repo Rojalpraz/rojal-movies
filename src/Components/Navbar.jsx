@@ -4,8 +4,8 @@ import {Link} from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="">
-    <div className="p-2  flex items-center justify-between bg-black border-b border-b-gray-600 gap-3">
+    <nav className="w-full  bg-black border-b border-b-gray-600 ">
+    <div className="p-2 flex max-w-7xl mx-auto items-center justify-between gap-3">
       <div className="flex items-center gap-4">
         <Link to="/">
           <img src="/logo.jpg" alt="Movie Logo" className="w-[50px]" />

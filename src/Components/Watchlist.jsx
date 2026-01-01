@@ -11,7 +11,7 @@ function Watchlist() {
   };
 
   return (
-    <>
+    <div className="max-w-7xl w-full mx-auto">
   
       <div className="text-center m-8">
         <input
@@ -44,7 +44,7 @@ function Watchlist() {
                   return (
                     <tr
                       key={rojal.id}
-                      className="border-2 border-gray-400/40 block md:table-row mb-4 md:mb-0"
+                      className="border-2 text-white border-gray-400/40 block md:table-row mb-4 md:mb-0"
                     >
                       <td className="p-3  md:table-cell flex justify-center md:justify-start">
                         <img
@@ -84,7 +84,7 @@ function Watchlist() {
         </div>
       </div>
     
-    </>
+    </div>
   );
 }
 
